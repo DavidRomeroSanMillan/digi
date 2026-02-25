@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Eliminar Habitación</h2>
+  <p>¿Eliminar "{{ object.number }}"?</p>
+  <form method="post">{% csrf_token %}
+    <button type="submit">Confirmar</button>
+  </form>
+  <p><a href="{% url 'room-list' %}">Cancelar</a></p>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>{{ object.name }}</h2>
+  <p>{{ object.description }}</p>
+  <p><a href="{% url 'item-edit' object.pk %}">Editar</a> | <a href="{% url 'item-delete' object.pk %}">Eliminar</a></p>
+  <p><a href="{% url 'item-list' %}">Volver</a></p>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Habitaciones</h2>
+  <p><a href="{% url 'room-add' %}">Añadir habitación</a></p>
+  <ul>
+    {% for room in object_list %}
+      <li><a href="{% url 'room-detail' room.pk %}">{{ room.number }} ({{ room.beds }} camas)</a></li>
+    {% empty %}
+      <li>No hay habitaciones.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
