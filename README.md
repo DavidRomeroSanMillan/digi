@@ -37,29 +37,21 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4) Variables de entorno (opcional)
 
-Si quieres usar variables (p.ej. `SECRET_KEY`), crea un archivo `.env` en la raíz o exporta las variables en tu shell. Ejemplo mínimo `.env`:
-
-```
-SECRET_KEY=tu_secret_key_aqui
-DEBUG=True
-```
-
-5) Migraciones y base de datos
+4) Migraciones y base de datos
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-6) Crear superusuario (para `admin`)
+5) Crear superusuario (para `admin`)
 
 ```bash
 python manage.py createsuperuser
 ```
 
-7) Arrancar servidor
+6) Arrancar servidor
 
 ```bash
 python manage.py runserver
