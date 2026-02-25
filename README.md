@@ -57,16 +57,4 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-Rutas importantes
-- Root / -> admin (hemos redirigido la raíz a `/admin/`)  
-- App (clientes/habitaciones/items): `/app/`
 
-Comprobaciones rápidas
-- `python -c "import django; print(django.get_version())"`  
-- `python -c "import sys; print(sys.executable)"` (verifica que apunta al `.venv`)
-
-Notas
-- Si el repositorio incluye `db.sqlite3`, puedes usarla directamente, pero es recomendable ejecutar `migrate` para sincronizar.  
-- Para pruebas rápidas, entra en `http://127.0.0.1:8000/` para acceder al admin, y `http://127.0.0.1:8000/app/` para ver la UI de la app.
-
-Si quieres, puedo añadir un ejemplo de `.env.example` o subir el README al repositorio con tu remoto ya configurado.
