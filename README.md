@@ -22,8 +22,8 @@ Una aplicación web Django para gestionar clientes, habitaciones e ítems de un 
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/<tu-usuario>/<tu-repo>.git
-cd <tu-repo>
+git clone https://github.com/DavidRomeroSanMillan/digi.git
+cd digi
 ```
 
 ### 2. Crear y activar un entorno virtual
