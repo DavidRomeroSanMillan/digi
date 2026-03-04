@@ -53,8 +53,22 @@ source venv/bin/activate
 
 ### 3. Instalar dependencias
 
+Asegúrate de estar en la carpeta raíz del proyecto (donde están los archivos `manage.py` y `requirements.txt`):
+
+```bash
+cd C:\Users\TuUsuario\Desktop\digi
+```
+
+Luego instala las dependencias:
+
 ```bash
 pip install -r requirements.txt
+```
+
+Si ves un error "Could not open requirements file", significa que no estás en el directorio correcto. Verifica con:
+
+```bash
+dir requirements.txt
 ```
 
 ### 4. Configurar la base de datos
