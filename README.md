@@ -62,7 +62,7 @@ cd C:\Users\TuUsuario\Desktop\digi
 Luego instala las dependencias:
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 Si ves un error "Could not open requirements file", significa que no estás en el directorio correcto. Verifica con:
